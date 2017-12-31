@@ -1,16 +1,19 @@
-# heroku-de-ruboty
-Ruboty on Heroku
+# What's this?
+- heroku-de-ruboty
+- Ruboty on Heroku
+    - deoployed on Heroku (manually)
 
 # Tips
-- the name of bot can be defined by ENV
+- I recommended using with `dotenv` gem
+- the name of the bot can be defined by ENV
     - `ROBOT_NAME`
     - default name is `ruboty`
-- say method
+- methods
     - do reply
         - `message.reply`
     - username
         - `message.from_name`
-    - thw reply example
+    - the reply example
         - `message.reply("@#{message.from_name} 🍻🍻🍻🍻🍻)`
 
 # LICENSE
