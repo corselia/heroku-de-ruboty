@@ -1,20 +1,23 @@
 # What's this?
-- heroku-de-ruboty
+- `heroku-de-ruboty`
 - Ruboty on Heroku
-    - deoployed on Heroku (manually)
+    - deployed on Heroku and run this (manually)
+    - be careful not to stop by non-access within 30 minutes
+        - exec cron such as `$ curl https://foobar.herokuapp.com/`
 
 # Tips
-- I recommended using with `dotenv` gem
-- the name of the bot can be defined by ENV
-    - `ROBOT_NAME`
-    - default name is `ruboty`
-- methods
+- I recommended using `dotenv` gem
+    - Ruboty requires config value on environment variable
+- the name of the bot can be defined by environment variable
+    - as `ROBOT_NAME`
+    - default bot name is `ruboty`
+- operation methods
     - do reply
         - `message.reply`
-    - username
+    - from username
         - `message.from_name`
-    - the reply example
-        - `message.reply("@#{message.from_name} 🍻🍻🍻🍻🍻)`
+    - the example of reply
+        - `message.reply("@#{message.from_name} 🍻🍻🍻🍻🍻")`
 
 # LICENSE
 - [MIT LICENSE](LICENSE)
