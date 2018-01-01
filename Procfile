@@ -1,1 +1,1 @@
-ruboty: bundle exec ruboty --load ruboty_config.rb
+ruboty: bundle exec ruboty --load my_ruboty.rb
