@@ -1,10 +1,10 @@
 # What's this?
 - this is the very [Ruboty](https://github.com/r7kamura/ruboty)
-- expected to deploy to `Heroku`, but you can exec on any environment
+- expected to deploy to `Heroku`, but you can execute on any environment
 
 # Prepare
-- you prepare `.env` file
-- the sample `.env` file is included in this repository
+- you need to prepare `.env` file
+- the sample `.env` file is [here](sample.env)
 
 # How to deploy to Heroku
 - it is easy to deploy to `Heroku`
@@ -34,13 +34,15 @@ $ bundle exec ruboty --load my_ruboty_logic.rb
 - the name of the bot can be defined by environment variable
     - as `ROBOT_NAME`
     - the default bot name is `ruboty`
-- these are operation methods
-    - do reply (basic behavior)
-        - `message.reply(reply_content)`
-    - from username
-        - `message.from_name`
-- the example of replying
-    - `message.reply("@#{message.from_name} 🍻🍻🍻🍻🍻")`
+- the operation methods
+    - `message.reply(reply_content)`
+        - `message` is the object of the message which the user says
+        - this method executes `do reply (basic behavior)`
+    - `message.from_name`
+        - `message` is the object of the message which the user says
+        - this method returns `from username`
+- the example statement of replying
+    - `message.reply("@#{message.from_name} these are your beers! 🍻🍻🍻🍻🍻")`
 
 # NOT GOOD
 - the test codes aren't written
