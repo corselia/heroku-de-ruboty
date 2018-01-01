@@ -1,4 +1,5 @@
 require './original_handlers/sushi'
+require './original_handlers/tabetai'
 
 # 既存の gem を改造するのってこうやってオーバーライドするしかないのかなぁ
 module Ruboty
