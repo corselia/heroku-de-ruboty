@@ -4,7 +4,7 @@ module Ruboty
   module Handlers
     class StarsGacha < Base
       on(
-        /108星ガチャ\z/i,
+        /.*108星ガチャ\z/i,
         name: "stars_gacha",
         description: "108星ガチャ（ただし幻水II）"
       )
