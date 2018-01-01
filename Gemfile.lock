@@ -1,5 +1,4 @@
 GEM
-  remote: https://rubygems.org/
   specs:
     activesupport (5.1.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -36,7 +35,6 @@ GEM
     multipart-post (2.0.0)
     naught (1.1.0)
     public_suffix (3.0.1)
-    rack (2.0.3)
     ruboty (1.3.0)
       activesupport
       bundler
@@ -76,7 +74,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rack
   ruboty
   ruboty-google_image
   ruboty-twitter
