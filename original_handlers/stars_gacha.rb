@@ -16,7 +16,7 @@ module Ruboty
         gacha_hit_character_name = table[gacha_number][:character_name]
         gacha_hit_uri = table[gacha_number][:uri]
 
-        message.reply("@#{message.from_name} #{gacha_hit_character_name} を引きました！ #{gacha_hit_uri}")
+        message.reply("@#{message.from_name} #{gacha_hit_character_name}を引きました！ #{gacha_hit_uri}")
       end
     end
   end
