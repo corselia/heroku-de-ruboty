@@ -2,7 +2,7 @@ module Ruboty
   module Handlers
     class Tabetai < Base
       on(
-        /(<keyword>) 食べたい\z/i,
+        /(?<keyword>.+) 食べたい\z/i,
         name: "tabetai",
         description: "食べたいとつぶやいた食べ物の画像が投げつけられる"
       )
