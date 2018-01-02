@@ -5,6 +5,8 @@
 # Prepare
 - you need to prepare `.env` file
 - the sample `.env` file is [here](sample.env)
+- install gems
+    - `$ bundle install --path vendor/bundle`
 
 # How to deploy to Heroku
 - it is easy to deploy to `Heroku`
