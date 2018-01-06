@@ -12,7 +12,8 @@ module Ruboty
       def stars_gacha(message)
         table = CSV.table(File.expand_path('../108stars.csv', __FILE__))
 
-        gacha_number = rand(0..131)
+        # gacha_number = rand(0..131)
+        gacha_number = 107 # ムクムク
         gacha_hit_character_name = table[gacha_number][:character_name]
         gacha_hit_uri = table[gacha_number][:uri]
 
